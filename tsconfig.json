@@ -6,7 +6,7 @@
     "baseUrl": ".",
     "typeRoots": ["./node_modules/@types", "./types"],
     "paths": {
-      "@malessui/react": ["packages/react/src"],
+      "@monore/react": ["packages/react/src"],
     }
   }
 }
