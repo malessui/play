@@ -2,7 +2,7 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "npmClient": "yarn",
   "useWorkspace": true,
   "registry": "https://registry.npmjs.org/",
@@ -10,10 +10,15 @@
     "access": "public"
   },
   "command": {
-    "version": { "exact": true },
+    "version": {
+      "exact": true
+    },
     "publish": {
       "conventionalCommits": true,
-      "ignoreChanges": ["**/stories/**", "**/tests/**"],
+      "ignoreChanges": [
+        "**/stories/**",
+        "**/tests/**"
+      ],
       "message": "chore(release): publish",
       "registry": "https://npm.pkg.github.com",
       "allowBranch": "main"

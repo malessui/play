@@ -1,6 +1,6 @@
 {
   "name": "@monore/react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/react.esm.js",
@@ -21,9 +21,9 @@
     "@babel/runtime": "^7.13.10"
   },
   "peerDependencies": {
+    "@stitches/react": "^0.2.2",
     "react": "^16.8 || ^17.0",
-    "react-dom": "^16.8 || ^17.0",
-    "@stitches/react": "^0.2.2"
+    "react-dom": "^16.8 || ^17.0"
   },
   "repository": {
     "type": "git",
