@@ -15,7 +15,7 @@
     "build": "tsdx build --tsconfig tsconfig.json",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepublish": "npm run build"
+    "prepublish": "yarn build"
   },
   "dependencies": {
     "@babel/runtime": "^7.13.10"
