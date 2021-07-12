@@ -31,5 +31,8 @@
   },
   "bugs": {
     "url": "https://github.com/jamastek/monore/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
