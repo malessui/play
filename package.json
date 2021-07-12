@@ -1,12 +1,10 @@
 {
   "name": "monore",
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*",
-      "docs"
-    ]
-  },
+  "workspaces": [
+    "packages/*",
+    "docs"
+  ],
   "main": "index.js",
   "directories": {
     "doc": "docs"
