@@ -14,19 +14,17 @@
   "scripts": {
     "clean": "lerna clean --yes && rm -rf node_modules",
     "clean-dist": "yarn lerna exec -- rimraf dist",
-    "prestart": "yarn && yarn bootstrap",
     "boot": "yarn prestart && yarn build",
     "start": "yarn storybook",
-    "start:all": "yarn build && concurrently \"yarn docs dev\"  \"yarn storybook\" ",
     "build": "lerna run build --no-private --stream",
-    "bootstrap": "yarn install && lerna bootstrap --use-workspaces",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "release": "changeset publish",
-    "docs": "yarn workspace @vechaiui/docs",
     "docs:dev": "yarn docs dev",
-    "docs:start": "yarn docs start"
+    "docs:start": "yarn docs start",
+    "changeset": "changeset",
+    "release": "changeset publish",
+    "version:canary": "changeset version --snapshot canary",
+    "release:canary": "changeset publish --tag canary"
   },
   "husky": {
     "hooks": {
@@ -43,6 +41,7 @@
     "lerna": "^4.0.0"
   },
   "dependencies": {
+    "@radix-ui/colors": "^0.1.7",
     "@stitches/react": "^0.2.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

@@ -2,10 +2,9 @@
 
 ## Usage
 
-This monorepo is setup for a dummy `@thefakeorg/` NPM organization. There are 2 packages by default:
+This monorepo is setup for a dummy `@monore/` NPM organization. There are 2 packages by default:
 
-- `@thefakeorg/react` - A placholder React component
-- `@thefakeorg/utils` - A utils packages
+- `@monore/react` - A placholder React component
 
 Unlike other TSDX templates, the developer experience for this template is currently a bit more manual.
 

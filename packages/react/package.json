@@ -21,7 +21,9 @@
     "@babel/runtime": "^7.13.10"
   },
   "peerDependencies": {
-    "react": "^16.8 || ^17.0"
+    "react": "^16.8 || ^17.0",
+    "react-dom": "^16.8 || ^17.0",
+    "@stitches/react": "^0.2.2"
   },
   "repository": {
     "type": "git",

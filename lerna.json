@@ -6,6 +6,9 @@
   "npmClient": "yarn",
   "useWorkspace": true,
   "registry": "https://registry.npmjs.org/",
+  "publishConfig": {
+    "access": "public"
+  },
   "command": {
     "version": { "exact": true },
     "publish": {
