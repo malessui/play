@@ -1,7 +1,50 @@
 {
   "name": "monore",
   "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "docs"
+    ]
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "clean": "lerna clean --yes && rm -rf node_modules",
+    "clean-dist": "yarn lerna exec -- rimraf dist",
+    "prestart": "yarn && yarn bootstrap",
+    "boot": "yarn prestart && yarn build",
+    "start": "yarn storybook",
+    "start:all": "yarn build && concurrently \"yarn docs dev\"  \"yarn storybook\" ",
+    "build": "lerna run build --no-private --stream",
+    "bootstrap": "yarn install && lerna bootstrap --use-workspaces",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "release": "changeset publish",
+    "docs": "yarn workspace @vechaiui/docs",
+    "docs:dev": "yarn docs dev",
+    "docs:start": "yarn docs start"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@storybook/addon-actions": "^6.3.4",
+    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-links": "^6.3.4",
+    "@storybook/react": "^6.3.4",
+    "babel-loader": "^8.2.2",
     "lerna": "^4.0.0"
+  },
+  "dependencies": {
+    "@stitches/react": "^0.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }

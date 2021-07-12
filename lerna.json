@@ -2,5 +2,18 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.0.0"
+  "version": "0.0.1",
+  "npmClient": "yarn",
+  "useWorkspace": true,
+  "registry": "https://registry.npmjs.org/",
+  "command": {
+    "version": { "exact": true },
+    "publish": {
+      "conventionalCommits": true,
+      "ignoreChanges": ["**/stories/**", "**/tests/**"],
+      "message": "chore(release): publish",
+      "registry": "https://npm.pkg.github.com",
+      "allowBranch": "main"
+    }
+  }
 }
