@@ -15,6 +15,7 @@
     "boot": "yarn prestart && yarn build",
     "start": "yarn storybook",
     "build": "lerna run build --no-private --stream",
+    "prepublish": "lerna run prepublish",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "docs:dev": "yarn docs dev",

@@ -1,13 +1,5 @@
-# `react-accordion`
-
-## Installation
-
-```sh
-$ yarn add @radix-ui/react-accordion
-# or
-$ npm install @radix-ui/react-accordion
-```
+# `Monore`
 
 ## Usage
 
-View docs [here](https://radix-ui.com/primitives/docs/components/accordion).
+View docs [here](https://github.com/jamastek/monore.git).
