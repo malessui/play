@@ -1,6 +1,6 @@
 {
-  "name": "@monore/react",
-  "version": "0.0.2",
+  "name": "@shipless/play",
+  "version": "0.0.11",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/react.esm.js",
@@ -18,10 +18,12 @@
     "prepublish": "yarn build"
   },
   "dependencies": {
-    "@babel/runtime": "^7.13.10"
+    "@babel/runtime": "^7.13.10",
+    "@monaco-editor/react": "^4.2.1",
+    "monaco-themes": "^0.3.3",
+    "react-split-pane": "^2.0.3"
   },
   "peerDependencies": {
-    "@stitches/react": "^0.2.2",
     "react": "^16.8 || ^17.0",
     "react-dom": "^16.8 || ^17.0"
   },

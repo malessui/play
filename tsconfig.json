@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.tsdx.json",
-  "include": ["packages", "types", "scripts", "docs"],
+  "include": ["packages", "types", "scripts", "docs", "tailwind.config.js", "postcss.config.js"],
   "compilerOptions": {
     "allowJs": false,
     "baseUrl": ".",
