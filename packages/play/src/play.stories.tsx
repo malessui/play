@@ -46,10 +46,10 @@ body {
 
 export default {
   component: EditorPreview,
-  title: 'Components/Button',
+  title: 'Shipless',
 } as Meta;
 
-export const Primary: React.VFC<{}> = () => (
+export const Play: React.VFC<{}> = () => (
   <EditorPreview
     defaultValue={value1}
   />
