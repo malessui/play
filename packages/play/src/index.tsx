@@ -32,7 +32,6 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
 
   const handleEditorDidMount = (editor: any) => {
     editorContainerRef.current = editor
-    //@ts-ignore
     editorContainerRef.current.updateOptions({
       minimap: {
         enabled: false
@@ -42,11 +41,9 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
   }
 
   const inject = useCallback((content) => {
-    //@ts-ignore
     previewRef.current.contentWindow.postMessage(content, "*")
   }, [])
 
-  //@ts-ignore
   const handleEditorChange = (value) => {
     if (activeTab === "html") {
       inject({ html: value })
@@ -63,10 +60,8 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
     setActiveTab(val)
   }, [])
 
-  //@ts-ignore
   const tabSeleceted = (val) => activeTab === val ? "bg-blueGray-900" : null
 
-  //@ts-ignore
   const handleSplit = (val) => {
     setSplit(val)
   }

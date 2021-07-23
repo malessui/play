@@ -40,9 +40,9 @@ export const SplitBar: React.FC<SplitBarProps> = ({handleSplit, split}) => {
   })
   
   return (
-    <div className="flex">
+    <div className="flex items-center">
       <div>
-        <button onClick={() => handleSplit("vertical")} type="button" className="group rounded-md border border-transparent focus:outline-none dark:focus:bg-black dark:focus:border-gray-800 text-gray-700 dark:text-white">
+        <button onClick={() => handleSplit("vertical")} type="button" className="group align-middle rounded-md border border-transparent focus:outline-none dark:focus:bg-black dark:focus:border-gray-800 text-gray-700 dark:text-white">
           <span className="sr-only">Switch to vertical split layout</span>
           <svg width="28" height="28" viewBox="-5 -5 34 34" strokeWidth="1.5" {...siSplit("vertical")}>
             <rect x="2.75" y="4.75" width="18.5" height="14.5" rx="1.25" fill="none"></rect><path d="M2.75 6c0-.69.56-1.25 1.25-1.25h7.25v14.5H4c-.69 0-1.25-.56-1.25-1.25V6z"></path>
@@ -50,7 +50,7 @@ export const SplitBar: React.FC<SplitBarProps> = ({handleSplit, split}) => {
         </button>
       </div>
       <div>
-        <button onClick={() => handleSplit("horizontal")} type="button" className="group rounded-md border border-transparent focus:outline-none dark:focus:bg-black dark:focus:border-gray-800 text-gray-400">
+        <button onClick={() => handleSplit("horizontal")} type="button" className="group align-middle rounded-md border border-transparent focus:outline-none dark:focus:bg-black dark:focus:border-gray-800 text-gray-400">
           <span className="sr-only">Switch to horizontal split layout</span>
           <svg width="28" height="28" viewBox="-5 -5 34 34" strokeWidth="1.5" {...siSplit("horizontal")}>
             <rect x="21.25" y="19.25" width="18.5" height="14.5" rx="1.25" transform="rotate(-180 21.25 19.25)" fill="none"></rect><path d="M21.25 11.25H2.75V6c0-.69.56-1.25 1.25-1.25h16c.69 0 1.25.56 1.25 1.25v5.25z"></path>
