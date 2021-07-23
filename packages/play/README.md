@@ -20,7 +20,9 @@ npm install @shipless/play
 
 ## Usage
 
-```python
+`import` @shipless/play package suck as the following:
+
+```js
 import ShiplessPlay from "@shipless/play"
 
 const value = {
@@ -53,6 +55,11 @@ console.log("your js")
 
 <ShiplessPlay defaultValue={value}>
 ```
+
+ Then you must import style on your css file:
+ ```css
+ @import url("@shipless/play/dist/style.css");
+ ```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
