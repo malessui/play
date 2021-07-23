@@ -18,6 +18,7 @@
     "prepublish": "lerna run prepublish",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "build-static-webapp":"expo build:web",
     "docs:dev": "yarn docs dev",
     "docs:start": "yarn docs start",
     "changeset": "changeset",
