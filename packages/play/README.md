@@ -61,6 +61,27 @@ console.log("your js")
  @import url("@shipless/play/dist/style.css");
  ```
 
+ ## Format for initial snippet
+
+```js
+{
+  html: `<h1>Title</h1>`,
+  css: `h1 { color: red }`,
+  javascript: `console.log("this")`
+}
+```
+
+ ## Demo
+
+ [Example](https://shipless-play.netlify.app/)
+
+ ## API
+
+|      Props       |                          description                       |   default                                | required |
+| :--------------: | :--------------------------------------------------------: | :--------------------------------------: | :------: |
+|        id        |             a unique identifier for the iFrame             |                                          |   false  |
+|  defaultValue    |            Initial code to be displayed                    |                                          |   true   |
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 

@@ -73,7 +73,7 @@ console.log("your js")
 
  ## Demo
 
- [Example](https://choosealicense.com/licenses/mit/)
+ [Example](https://shipless-play.netlify.app/)
 
  ## API
 

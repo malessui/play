@@ -1,6 +1,6 @@
 {
   "name": "@shipless/play",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/react.esm.js",
@@ -29,10 +29,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamastek/monore.git"
+    "url": "git+git@github.com:shipless/play.git"
   },
   "bugs": {
-    "url": "https://github.com/jamastek/monore/issues"
+    "url": "https://github.com/shipless/play/issues"
   },
   "publishConfig": {
     "access": "public"
