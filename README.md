@@ -61,6 +61,10 @@ console.log("your js")
  @import url("@shipless/play/dist/style.css");
  ```
 
+ ## Demo
+
+ [Example](https://choosealicense.com/licenses/mit/)
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
