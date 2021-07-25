@@ -13,13 +13,13 @@ Shipless Play is a React simple playground for HTML, CSS and JavaScript
 ![NPM](https://img.shields.io/npm/l/@shipless/highlight?style=for-the-badge)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/@shipless/play?style=for-the-badge)
 
-## Features
+### Features
 - ✅ Realtime preview
 - ⬜️ Support SCSS
 - ⬜️ Support React
 - ⬜️ Custom theme
 
-## Installation
+### Installation
 
 Use the package manager `yarn` or `npm` to install this package.
 
@@ -29,7 +29,7 @@ yarn add @shipless/play
 npm install @shipless/play
 ```
 
-## Usage
+### Usage
 
 `import` @shipless/play package suck as the following:
 
@@ -72,7 +72,7 @@ console.log("your js")
  @import url("@shipless/play/dist/style.css");
  ```
 
- ## Format for initial snippet
+ ### Format for initial snippet
 
 ```js
 {
@@ -82,11 +82,15 @@ console.log("your js")
 }
 ```
 
- ## Demo
+ ### Demo
 
  [Example](https://shipless-play.netlify.app/)
 
- ## API
+ ### Showcase
+
+ [Custom scrollbar di css](https://muhrusdi.github.io/blog/custom-scrollbar-di-css) murusdi
+
+ ### API
 
 |      Props       |                          description                       |   default                                | required |
 | :--------------: | :--------------------------------------------------------: | :--------------------------------------: | :------: |
