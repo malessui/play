@@ -9,7 +9,7 @@ const Preview = forwardRef(({initialContent, inject}, ref) => {
       onLoad={() => {
         inject({
           html: initialContent.html,
-          css: initialContent.scss,
+          css: initialContent.css,
           js: initialContent.javascript,
         })
       }}

@@ -8,7 +8,7 @@ const html = `
 </div>
 `
 
-const scss = `
+const css = `
 body {
   background: #97a2a9;
   display: flex;
@@ -41,5 +41,5 @@ const javascript = `
 `
 
 export default {
-  html, scss, javascript,
+  html, css, javascript,
 }
