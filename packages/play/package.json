@@ -1,6 +1,6 @@
 {
   "name": "@shipless/play",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/react.esm.js",
@@ -21,7 +21,7 @@
     "@babel/runtime": "^7.13.10",
     "@monaco-editor/react": "^4.2.1",
     "monaco-themes": "^0.3.3",
-    "react-split-pane": "^2.0.3"
+    "react-split-pane": "^0.1.92"
   },
   "peerDependencies": {
     "react": "^16.8 || ^17.0",

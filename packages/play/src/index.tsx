@@ -19,6 +19,7 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
   const previewRef = useRef(null)
   const [activeTab, setActiveTab] = useState("html")
   const [split, setSplit] = useState("vertical")
+  const [isDrag, setIsDrag] = useState(false)
 
   const initialContent = defaultValue ? defaultValue : initContent
 
@@ -65,7 +66,7 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
   const handleSplit = (val) => {
     setSplit(val)
   }
-
+  
   return (
     <div className="shipless-play code-play">
       <div className="border-b border-blueGray-800 bg-blueGray-900 rounded-tr-md rounded-tl-md">
@@ -88,6 +89,8 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
         size="50%"
         style={{position: "relative"}}
         className="border border-blueGray-800 border-t-0 rounded-br-md rounded-bl-md"
+        onDragStarted={() => setIsDrag(true)}
+        onDragFinished={() => setIsDrag(false)}
       >
         <div>
           <Editor
@@ -100,7 +103,10 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
             onChange={handleEditorChange}
           />
         </div>
-        <div className="relative w-full h-full" style={{height: split === "horizontal" ? 300 : null}}>
+        <div className="relative w-full h-full" style={{height: split === "horizontal" ? 300 : null, pointerEvents: isDrag ? "none" : "auto"}}>
+          {/* <div>
+          <iframe src="" frameBorder="0">asdf</iframe>
+          </div> */}
           <Preview ref={previewRef} inject={inject} initialContent={initialContent}/>
         </div>
       </SplitPane>
