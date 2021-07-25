@@ -87,7 +87,7 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
         split={split}
         size="50%"
         style={{position: "relative"}}
-        className="border border-blueGray-800 border-t-0 rounded-br-md rounded-bl-md"
+        className="rounded-br-md rounded-bl-md"
         onDragStarted={() => setIsDrag(true)}
         onDragFinished={() => setIsDrag(false)}
       >

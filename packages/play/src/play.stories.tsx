@@ -7,7 +7,7 @@ import initialContent from "./initialContent"
 
 const value1 = {
   html: initialContent.html,
-  scss: initialContent.css,
+  css: initialContent.css,
   javascript: initialContent.javascript
 }
 
