@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/shipless/play">
-    <img alt="shipless" src="https://res.cloudinary.com/muhrusdi/image/upload/v1627065579/SCREENSHOT.png" width="100%" />
+    <img alt="shipless" src="https://res.cloudinary.com/muhrusdi/image/upload/v1627214680/SCREENSHOT.png" width="100%" />
   </a>
 </p>
 
