@@ -49,7 +49,7 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
     if (activeTab === "html") {
       inject({ html: value })
     }
-    if (activeTab === "css") {
+    if (activeTab === "scss") {
       inject({ css: value })
     }
     if (activeTab === "javascript") {

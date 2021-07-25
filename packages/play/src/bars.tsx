@@ -20,7 +20,7 @@ export const TabBar: React.FC<TabBarProps> = React.memo(({handleSelectTab, tabSe
           <button onClick={() => handleSelectTab("html")} className={`px-2 py-1 rounded-tl-md w-14 text-center rounded-bl-md ${tabSeleceted("html")}`}>HTML</button>
         </div>
         <div>
-          <button onClick={() => handleSelectTab("css")} className={`px-2 py-1 w-14 text-center ${tabSeleceted("css")}`}>CSS</button>
+          <button onClick={() => handleSelectTab("scss")} className={`px-2 py-1 w-14 text-center ${tabSeleceted("scss")}`}>CSS</button>
         </div>
         <div>
           <button onClick={() => handleSelectTab("javascript")} className={`px-2 py-1 w-14 text-center rounded-tr-md rounded-br-md ${tabSeleceted("javascript")}`}>JS</button>

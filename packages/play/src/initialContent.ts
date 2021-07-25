@@ -1,14 +1,14 @@
 const html = `
 <div class="section">
   <div>
-    <h1>Welcome to Playground</h1>
+    <h1>Welcome to Playgroundd</h1>
     <p> A simple playground for HTML, CSS and JavaScript</p>
     <a href="https://github.com/shipless/play">Github</a>
   </div>
 </div>
 `
 
-const css = `
+const scss = `
 body {
   background: #97a2a9;
   display: flex;
@@ -37,9 +37,9 @@ body {
 `
 
 const javascript = `
-
+// console.log("Your js")
 `
 
 export default {
-  html, css, javascript,
+  html, scss, javascript,
 }

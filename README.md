@@ -12,6 +12,11 @@ Shipless Play is a React simple playground for HTML, CSS and JavaScript
 [![npm](https://img.shields.io/npm/dt/@shipless/play?label=Download&style=for-the-badge)](https://www.npmjs.com/package/@shipless/play)
 ![NPM](https://img.shields.io/npm/l/@shipless/highlight?style=for-the-badge)
 
+## Features
+- ✅ Realtime preview
+- ⬜️ Support SCSS
+- ⬜️ Support React
+
 ## Installation
 
 Use the package manager `yarn` or `npm` to install this package.
