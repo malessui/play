@@ -88,7 +88,7 @@ console.log("your js")
 
  ### Showcase
 
- [Custom scrollbar di css](https://muhrusdi.github.io/blog/custom-scrollbar-di-css) murusdi
+ - [Custom scrollbar di css](https://muhrusdi.github.io/blog/custom-scrollbar-di-css) - murusdi
 
  ### API
 
