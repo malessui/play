@@ -1,7 +1,7 @@
 // Button.stories.ts | Button.stories.tsx
 
-import React from 'react'
-import { Meta } from '@storybook/react';
+import React from "react"
+// import { Meta } from "@storybook/react";
 import EditorPreview from "./index"
 import initialContent from "./initialContent"
 
@@ -13,8 +13,8 @@ const value1 = {
 
 export default {
   component: EditorPreview,
-  title: 'Shipless',
-} as Meta;
+  title: "Shipless",
+}
 
 export const Play: React.VFC<{}> = () => (
   <EditorPreview

@@ -3,7 +3,6 @@ import React, { useRef, useCallback, useState } from "react"
 import SplitPane from "react-split-pane"
 import Editor, { loader } from "@monaco-editor/react"
 import nightOwl from "monaco-themes/themes/Night Owl.json"
-// import { EditorStyled } from "./styled"
 import { TabBar, SplitBar } from "./bars"
 import initContent from "./initialContent"
 import Preview from "./preview"
@@ -68,7 +67,7 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
   }
   
   return (
-    <div className="shipless-play code-play">
+    <div className="shipless-play">
       <div className="border-b border-blueGray-800 bg-blueGray-900 rounded-tr-md rounded-tl-md">
         <div className="flex justify-between h-12 items-center text-base">
           <div className="px-4">

@@ -16,6 +16,7 @@ Shipless Play is a React simple playground for HTML, CSS and JavaScript
 - ✅ Realtime preview
 - ⬜️ Support SCSS
 - ⬜️ Support React
+- ⬜️ Custom theme
 
 ## Installation
 
@@ -89,7 +90,7 @@ console.log("your js")
 |      Props       |                          description                       |   default                                | required |
 | :--------------: | :--------------------------------------------------------: | :--------------------------------------: | :------: |
 |        id        |             a unique identifier for the iFrame             |                                          |   false  |
-|  defaultValue    |            Initial code to be displayed                    |                                          |   true   |
+|  defaultValue    |            Initial code to be displayed                    |                                          |   false   |
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
