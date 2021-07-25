@@ -91,7 +91,7 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
         onDragStarted={() => setIsDrag(true)}
         onDragFinished={() => setIsDrag(false)}
       >
-        <div>
+        <div className="bg-blueGray-900">
           <Editor
             height="300px"
             defaultLanguage={activeTab}
