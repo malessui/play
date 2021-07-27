@@ -1,5 +1,5 @@
 // @ts-nocheck
-import React, { useRef, useCallback, useState } from "react"
+import React, { useRef, useCallback, useState, memo } from "react"
 import SplitPane from "react-split-pane"
 import Editor, { loader } from "@monaco-editor/react"
 import nightOwl from "monaco-themes/themes/Night Owl.json"
@@ -13,6 +13,25 @@ type Props = {
   defaultValue: any
 }
 
+if (typeof window !== "undefined") {
+  loader.init()
+    .then(monaco => {
+      monaco.editor.defineTheme("night-owl", nightOwl)
+    })
+}
+
+const EditorMemo = memo(({defaultLanguage, path, defaultValue, onMount, onChange}) => (
+  <Editor
+    height="300px"
+    defaultLanguage={defaultLanguage}
+    path={path}
+    defaultValue={defaultValue}
+    theme="night-owl"
+    onMount={onMount}
+    onChange={onChange}
+  />
+))
+
 const EditorPreview: React.FC<Props> = ({defaultValue}) => {
   const editorContainerRef = useRef(null)
   const previewRef = useRef(null)
@@ -22,15 +41,7 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
 
   const initialContent = defaultValue ? defaultValue : initContent
 
-  if (typeof window !== "undefined") {
-    loader.init()
-      .then(monaco => {
-        monaco.editor.defineTheme("night-owl", nightOwl)
-      })
-  }
-
-
-  const handleEditorDidMount = (editor: any) => {
+  const handleEditorDidMount = useCallback((editor: any) => {
     editorContainerRef.current = editor
     editorContainerRef.current.updateOptions({
       minimap: {
@@ -38,7 +49,7 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
       },
       lineNumbersMinChars: 3
     })
-  }
+  }, [])
 
   const inject = useCallback((content) => {
     previewRef.current.contentWindow.postMessage(content, "*")
@@ -92,7 +103,7 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
         onDragFinished={() => setIsDrag(false)}
       >
         <div className="bg-blueGray-900">
-          <Editor
+          <EditorMemo
             height="300px"
             defaultLanguage={activeTab}
             path={activeTab}
