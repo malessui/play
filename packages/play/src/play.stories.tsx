@@ -21,3 +21,8 @@ export const Play: React.VFC<{}> = () => (
     defaultValue={value1}
   />
 );
+export const Play2: React.VFC<{}> = () => (
+  <EditorPreview
+    defaultValue={value1}
+  />
+);

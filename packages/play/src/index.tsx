@@ -10,7 +10,8 @@ import "./styles.css"
 
 type Props = {
   children?: React.ReactNode,
-  defaultValue: any
+  defaultValue: any,
+  id?: string,
 }
 
 if (typeof window !== "undefined") {
@@ -20,7 +21,7 @@ if (typeof window !== "undefined") {
     })
 }
 
-const EditorMemo = memo(({defaultLanguage, path, defaultValue, onMount, onChange}) => (
+const EditorMemo = memo(({defaultLanguage, path, defaultValue, onMount, key,onChange}) => (
   <Editor
     height="300px"
     defaultLanguage={defaultLanguage}
@@ -32,7 +33,7 @@ const EditorMemo = memo(({defaultLanguage, path, defaultValue, onMount, onChange
   />
 ))
 
-const EditorPreview: React.FC<Props> = ({defaultValue}) => {
+const EditorPreview: React.FC<Props> = ({defaultValue, id}) => {
   const editorContainerRef = useRef(null)
   const previewRef = useRef(null)
   const [activeTab, setActiveTab] = useState("html")
@@ -56,6 +57,7 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
   }, [])
 
   const handleEditorChange = (value) => {
+    console.log(id)
     if (activeTab === "html") {
       inject({ html: value })
     }
@@ -106,7 +108,7 @@ const EditorPreview: React.FC<Props> = ({defaultValue}) => {
           <EditorMemo
             height="300px"
             defaultLanguage={activeTab}
-            path={activeTab}
+            path={Math.random().toString(36).substring(7)}
             defaultValue={initialContent[activeTab]}
             theme="night-owl"
             onMount={handleEditorDidMount}
