@@ -1,6 +1,6 @@
 {
   "name": "@shipless/play",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/react.esm.js",
